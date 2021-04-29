@@ -32,7 +32,7 @@
     "build:all": "run-p lint test build:dll build:demo build",
     "clean": "rimraf lib",
     "test": "NODE_ENV=test jest --verbose --coverage",
-    "lint": "eslint . --ext .ts,tsx",
+    "lint": "eslint  --ext .ts,tsx",
     "prepublishOnly": "npm test && npm build",
     "git-add": "git add lib demo dll",
     "check-updates": "ncu"
